@@ -1,4 +1,27 @@
-Random
+
+Random 1.1
+
+I can write two variants of how should it work and what I have in reality but I will do it only in one document.
+
+The program which will help you to count faster. It givs you random numbers for operation you want to work with.
+When you run thise program you see 3 buttons called 'return', 'submit' and 'default'. Also there is an empty string for putting your
+result here. You don`t have any opportunity to put not a number in it and for checking its work there is an alert with the result putted by you. Thise messege shows itself anytime you unfocus that empty element (here I've used "onchange" html element). If you press the
+button return first of all will work 'alert' and only after the second click it will do its direct job.
+
+Two blocks are under the buttons, with there help you can:
+
+1. Choose the difficulty level by pressing 1, 2, 3, 4, 5, 6 or 7 number button. Then bigger number, then more difficult level you get.'); 
+2. Choose the kind of operation, please.
+3. Choose the amount of variables, please.
+
+After choosing what you want in 1 and/or 2 blocks you can 'return'. But if you have entered some text in empty place for text - then, for
+return, you have to do a double click at that button.
+
+After choosing anything in the last block all interface disappears and you see text document at left-upper corner of your screen.
+It gives correct result of what you choose, but needs many corrections and additions (it doesn`t do any operations with numbers, all interface disappears after thise 3 steps, the interface can became better etc.).
+
+
+Random 1.0
 ======
 
 The program which will help you to count faster. 
