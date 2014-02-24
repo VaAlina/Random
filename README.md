@@ -1,5 +1,5 @@
-
 Random 1.1
+======
 
 I can write two variants of how should it work and what I have in reality but I will do it only in one document.
 
