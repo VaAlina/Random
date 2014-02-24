@@ -1,102 +1,202 @@
 <html>
 <head>
-<script type='text/javascript'>
-//Программа для тренировки счёта, позволяющая выбирать количество
-//переменных и их разрядность.
-function start() {//Функция, определяющая программу. Запускается при загрузке страницы.
-var m, varn, n, t, f, th, s, fi, se, te, cont;//Объявление переменных.
-n = prompt('Choose the difficulty level by pressing 1, 2, 3, 4, 5, 6 or 7 number button. Then bigger number, then more difficult level you get.', '');
-switch(n){
-    case '1':
-    {var m = 100;//Количество нолей определяет 
-     break};     //длину (разрядность) числа = m.
-    case '2':
-    {var m = 1000;
-     break;}
-    case '3':
-    {var m = 10000;
-     break;}
-    case '4':
-    {var m = 100000;
-    break;}
-    case '5':
-    {var m = 1000000;
-     break;}
-    case '6':
-    {var m = 10000000;
-     break;}  
-    case '7':
-    {var m = 100000000;
-     break;}
-    default:
-    {var m = 100;
-    break}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<style type="text/css">
+
+#testcontainer1
+{
+padding:10px;
+width:390px;
+height:110px;
+border:1px solid grey;
 }
-f = Math.round(Math.random()* m); //Создание случайного числа (переменной)
-th = Math.round(Math.random()* m); //и последующее его преобразование
-s = Math.round(Math.random()* m);  //путём умножения на m.
-fi = Math.round(Math.random()* m);
-se = Math.round(Math.random()* m);
-te = Math.round(Math.random()* m);
- 
-varn = prompt('How many variables would you like to use? Enter the number of them.','');
-switch(varn){//Определение используемой формулы, количества переменных и выводимого текста.
-    case '2':
-    {var t = f+s;//Используемая формула и количество переменных.
-     document.write(f, '+', s);//Выводимый текст.
-     break;
-    };
-    case '3':
-    {var t = f+s+th;
-     document.write(f, '+', s, '+', th);
-     break;
-    };
-    case '4':
-    {var t = f+s+th+fi;
-     document.write(f, '+', s, '+', th, '+', fi);
-     break;
-    };
-    case '5':
-    {var t = f+s+th+fi+se;
-     document.write(f, '+', s, '+', th, '+', fi, '+', se);
-     break;
-    };
-    case '6':
-    {var t = f+s+th+fi+se+te;
-     document.write(f, '+', s, '+', th, '+', fi, '+', se, '+', te);
-     break;
-    };
-    default:
-    {var t = f+s;
-     document.write(f, '+', s);
-     break;
-    }; 
+#testcontainer2,#testcontainer3 
+{
+padding:10px;
+width:390px;
+height:80px;
+text-align:center;
+border:1px solid grey;
 }
-var sum=prompt('Result?', '');//Запрос суммы.
- if(true){setTimeout(perf, 3000)//Правильное решение, функция perf.
-    if (sum==t){document.write('='+t+' '+'perfect')}//Правильное решение, функция perf. 
-//Выполняет те же функции, что и предыдущая строка, но по 
-//отдельности они не работают.
-    else{alert('try again');prompt('Last chance.', '')}//Дополнительный запрос решения, в случае неправильного ответа, его отсутствия или невалидности.
-               if(true){(unperf)//Запуск функции правильного ответа.
-               if (sum==t){perf}//Запуск функции неправильного ответа.
-               else{document.write('='+t)}};};
-function perf(){document.write('='+t+' '+'perfect')}//Печать решения + perfect (похвала).
- 
-function unperf(){
-document.write('='+t)}//Печать решения.
- }
-</script>
+#static
+{
+
+width:390px;
+height:20px;
+margin-top:10px;
+margin-bottom:13px;
+padding:10px;
+}
+p
+{
+text-align:45%;
+text-color:#999999;
+margin-top:0px;
+margin-bottom:0px;
+padding:10px;
+}
+body
+{
+background-color:#F6D8CE;
+border:3px dotted;
+border-color:#6B1429
+font-family:'arial';
+padding-left: 20%;
+padding-bottom: 10%;
+}
+.main
+{
+font-size: 150%;
+color:#A2183A;
+}
+#back, #res
+{
+
+}
+
+</style>
+
 </head>
-<body onload='start()'>
+<body>
+
+<div id="elem"></div>
+
+<script>
+//Скрипт, печатающий переменные JS в документе HTML.
+window.onload = function () {
+  var text = "as", a = 2, b = 3, c = a + b;
+  document.body.innerHTML += '<div id="' + c + '">это div c id="' + c + '"</div>';
+}
+</script>
+
+<p id = 'head' class = 'main'>Enter the result in the form</p>
+<div id = 'static'>
+
+<input id="back" value="<< return" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick ="$('#testcontainer1, #testcontainer2 ').show();" onchange=""  type="button"/>
+
+
+<input id="res" value="" onkeydown = "javascript: return ((event.keyCode>47)&&(event.keyCode<58))"
+onchange="alert(this.value)" type="text"/>
+
+<input id = "submit" type="button" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick="var div = document.getElementById('res')" value="submit"/> 
+
+<input id="default" value="default >>"  onclick=""
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+ type="button"/>
+</div>
+ 
+
+<div id="testcontainer1">
+<p>Choose the difficulty level by pressing 1, 2, 3, 4, 5, 6 or 7 number button. Then bigger number, then more difficult level you get.');
+</p>
+<input id="b1" value="1" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick=" $('#testcontainer1').hide();
+f = Math.round(Math.random()* 100);
+th = Math.round(Math.random()* 100); //При попытке подстановки 
+s = Math.round(Math.random()* 100); // переменной, вместо прописывания
+fi = Math.round(Math.random()* 100);//значения каждый раз, не работает код.
+se = Math.round(Math.random()* 100);
+te = Math.round(Math.random()* 100);"  type="button"/>
+
+<input id="b2" value="2" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick=" $('#testcontainer1').hide(); f = Math.round(Math.random()* 1000);
+th = Math.round(Math.random()* 1000); 
+s = Math.round(Math.random()* 1000);  
+fi = Math.round(Math.random()* 1000);
+se = Math.round(Math.random()* 1000);
+te = Math.round(Math.random()* 1000);"  type="button"/>
+  
+<input id="b3" value="3" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer1').hide(); f = Math.round(Math.random()* 10000); 
+th = Math.round(Math.random()* 10000); 
+s = Math.round(Math.random()* 10000);  
+fi = Math.round(Math.random()* 10000);
+se = Math.round(Math.random()* 10000);
+te = Math.round(Math.random()* 10000);"  type="button"/>
+  
+<input id="b4" value="4"
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer1').hide();
+f = Math.round(Math.random()* 100000);
+th = Math.round(Math.random()* 100000); 
+s = Math.round(Math.random()* 100000);  
+fi = Math.round(Math.random()* 100000);
+se = Math.round(Math.random()* 100000);
+te = Math.round(Math.random()* 100000);"  type="button"/>
+  
+<input id="b5" value="5" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer1').hide(); f = Math.round(Math.random()* 1000000);
+th = Math.round(Math.random()* 1000000); 
+s = Math.round(Math.random()* 1000000);  
+fi = Math.round(Math.random()* 1000000);
+se = Math.round(Math.random()* 1000000);
+te = Math.round(Math.random()* 1000000)"  type="button"/>
+
+</div>
+
+<div id = 'testcontainer2'>
+<p>Choose the kind of operation, please.</p>
+  
+<input id="b6" value="+" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer2').hide(); operation = '+'" type="button"/>
+  
+<input id="b7" value="-" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer2').hide(); operation = '-'" type="button"/>
+  
+<input id="b8" value="*" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer2').hide(); operation = '*'" type="button"/>
+
+</div>
+
+
+<div id = 'testcontainer3'>
+<p>Choose the amount of variables, please.</p>
+  
+<input id="b9" value="2" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="document.write(f + ' '+ operation + ' ' + ' ' + th  + operation + ' ' + s)" type="button"/>
+  
+<input id="b10" value="3" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="document.write(f + ' ' + operation + ' ' + th + ' ' + operation + ' ' + s + ' ' +  operation + ' '+ fi)" type="button"/>
+  
+<input id="b11" value="4" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="document.write(f + ' ' + operation + ' ' + th + ' ' + operation + ' ' + s + ' ' + operation + ' ' + fi + ' ' + operation + ' ' + se)" type="button"/>
+  
+<input id="b12" value="5" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="" type="button"/>
+</div>
+
+
+
+<script/type = "javascript">
+
+//Скроем абзац с id="hid" с помощью jQuery 
+   $("#testcontainer3").hide();
+//Изменим содержимое абзаца с id="change"
+   document.getElementById("change").innerHTML="Данное содержимое было изменено с помощью JavaScript.";       
+} 
+
+</script>
+
 </body>
 </html>
- 
 
-
-
-
-
-
- 
- 
