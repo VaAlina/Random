@@ -1,3 +1,224 @@
+16:03 With working logical part.
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>                                                              
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css.css"> 
+<script src="script.js"></script>
+<style type="text/css" src = "css.css"></style>
+                                                  
+</head>
+<body>
+
+
+<p id = 'head' class = 'main'>Random numbers</p>
+
+
+<div id="drag">
+
+
+<p id="menu4">Translocate me </p>
+<p id="menu2">Log in</p>
+<p id="menu3" onclick = '
+$(document).ready(function() {
+   $("#dialogexit").dialog({autoOpen:false,buttons:{
+      OK:function(){
+         $(this).dialog("close");
+         alert("");},
+      :function(){
+         $(this).dialog("close");
+         alert("");}}
+   });
+   $("#butexit").click(function(){
+      $("#dialogexit").dialog("open"); 
+   });
+
+
+});'>Exit</p>
+<p id="menu">Settings</p>
+<ul id="list">
+<li></li>
+<li>my settings</li>
+<li>most used settings</li>
+<li>default mode 1</li>
+<li>default mode 2</li>
+</ul>
+
+
+<p id="menu1">My progress</p>
+<ul id="list1">
+<li></li>
+<li>my settings</li>
+<li>most used settings</li>
+<li>default mode 1</li>
+<li>default mode 2</li>
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<div id = 'static'>
+<p id = 'puthere'>Put your result in this form</p>
+<input id="back" value="<< return" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick ="$('#testcontainer1, #testcontainer2 ').fadeIn(1000);" onchange=""  type="button"/>
+
+<input id="res" value="" onkeydown = "javascript: return ((event.keyCode>47)&&(event.keyCode<58))"
+onchange="if (this.value == sum) {alert('good'); 
+}else{alert('bad')}" type="text"/>
+
+<input id = "submit" type="button" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick="
+var div = document.getElementById('res');
+" value="submit"/> 
+
+
+<input id="default" value="default >>"  onclick="
+f = Math.round(Math.random()* 100);
+th = Math.round(Math.random()* 100);
+operation = '+';
+$('#testcontainer1, #testcontainer2 ').fadeOut(1000);
+$('div#testcontainer3').text(f + ' '+ operation + ' ' + ' ' + th );"
+
+
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+ type="button"/>
+</div>
+ 
+
+
+<div id="testcontainer1" style="border-radius: 20px 20px 20px 20px;" class="radius" >
+<p>Choose the difficulty level by pressing 1, 2, 3, 4, 5, 6 or 7 number button. Then bigger number, then more difficult level you get.');
+</p>
+<input id="b1" value="1" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick=" $('#testcontainer1').fadeOut(1000); 
+f = Math.round(Math.random()* 100);
+th = Math.round(Math.random()* 100); 
+s = Math.round(Math.random()* 100);  
+fi = Math.round(Math.random()* 100);
+se = Math.round(Math.random()* 100);
+te = Math.round(Math.random()* 100);" type="button"/>
+
+<input id="b2" value="2" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick=" $('#testcontainer1').fadeOut(1000);; f = Math.round(Math.random()* 1000);
+th = Math.round(Math.random()* 1000); 
+s = Math.round(Math.random()* 1000);  
+fi = Math.round(Math.random()* 1000);
+se = Math.round(Math.random()* 1000);
+te = Math.round(Math.random()* 1000);"  type="button"/>
+  
+<input id="b3" value="3" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer1').fadeOut(1000);; f = Math.round(Math.random()* 10000); 
+th = Math.round(Math.random()* 10000); 
+s = Math.round(Math.random()* 10000);  
+fi = Math.round(Math.random()* 10000);
+se = Math.round(Math.random()* 10000);
+te = Math.round(Math.random()* 10000);"  type="button"/>
+  
+<input id="b4" value="4"
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer1').fadeOut(1000);
+f = Math.round(Math.random()* 100000);
+th = Math.round(Math.random()* 100000); 
+s = Math.round(Math.random()* 100000);  
+fi = Math.round(Math.random()* 100000);
+se = Math.round(Math.random()* 100000);
+te = Math.round(Math.random()* 100000);"  type="button"/>
+  
+<input id="b5" value="5" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer1').fadeOut(1000); f = Math.round(Math.random()* 1000000);
+th = Math.round(Math.random()* 1000000); 
+s = Math.round(Math.random()* 1000000);  
+fi = Math.round(Math.random()* 1000000);
+se = Math.round(Math.random()* 1000000);
+te = Math.round(Math.random()* 1000000)"  type="button"/>
+
+
+</div>
+<br/>
+<div id = 'testcontainer2' class="radius" style="border-radius: 20px 20px 20px 20px;"   >
+<p>Choose the kind of operation, please.</p>
+  
+<input id="b6" value="+" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer2').fadeOut(1000); operation = '+';" type="button"/>
+  
+<input id="b7" value="-" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer2').fadeOut(1000); operation = '-'" type="button"/>
+  
+<input id="b8" value="*" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer2').fadeOut(1000);  operation = '*'" type="button"/>
+
+
+</div>
+<br/>
+
+
+<div id = 'testcontainer3' class="radius" style="border-radius: 20px 20px 20px 20px;"  >
+<p>Choose the amount of variables, please.</p>
+  
+<input id="b9" value="2" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="function func() { 
+ $('div#testcontainer3').text(f + ' '+ operation + ' ' + ' ' + th );
+ if (operation = '+'){sum = f+th;
+ }else if (operation = '-'){sum = f-th;
+ }else if (operation = '*'){sum = f*th;
+ }else {sum = f/th};
+}
+setTimeout(func, 1000);" type="button"/>
+  
+<input id="b10" value="3" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="$('div#testcontainer3').text(f + ' ' + operation + ' ' + th + ' ' + operation + ' ' + s );
+ if (operation = '+'){sum = f+th+s;
+ }else if (operation = '-'){sum = f-th-s;
+ }else if (operation = '*'){sum = f*th*s;
+ }else {sum = f/th/s};" type="button"/>
+  
+<input id="b11" value="4" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="$('div#testcontainer3').text(f + ' ' + operation + ' ' + th + ' ' + operation + ' ' + s + ' ' + operation + ' ' + fi);
+ if (operation = '+'){sum = f+th+s+fi;
+ }else if (operation = '-'){sum = f-th-s-fi;
+ }else if (operation = '-'){sum = f*th*s*fi;
+ }else {sum = f/th/s/fi};" type="button"/>
+
+<input id="b12" value="5" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="$('div#testcontainer3').text(f + ' ' + operation + ' ' + th + ' ' + operation + ' ' + s + ' ' + operation + ' ' + fi + ' ' + operation + ' ' + se);
+ if (operation = '+'){sum = f+th+s+fi+se;
+ }else if (operation = '-'){sum = f-th-s-fi-se;
+ }else if (operation = '*'){sum = f*th*s*fi*se;
+ }else {sum = f/th/s/fi/se};" type="button"/>
+</div>
+
+<p><a href=https://www.google.com.ua/> About </a> | Contact me</p>
+
+</body>
+</html>
 
 
 3 separated documents html, css and js. Stil needs refractoring.
