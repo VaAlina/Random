@@ -1,3 +1,449 @@
+
+
+14:32 18.03 Although this code still need refractoring or rewriting, it works and is not as ugly as erlier.
+
+
+var m, f, th, se, te;
+
+$(document).ready(function(){
+
+
+   $("#menu").click(function(){ $("#list").slideToggle(2000)});
+   $("#menu").toggle(function(){
+      $("#img").attr("src")}, function(){
+      $("#img").attr("src")
+   });
+
+
+});     
+$(document).ready(function(){
+
+
+   $("#menu1").click(function(){ $("#list2").slideToggle(2000)});
+   $("#menu1").toggle(function(){
+      $("#img").attr("src")}, function(){
+      $("#img").attr("src")
+   });
+   
+      $("#menu5").click(function(){ $("#list1").slideToggle(2000)});
+   $("#menu5").toggle(function(){
+      $("#img").attr("src")}, function(){
+      $("#img").attr("src")
+   });
+   
+   $("#menu").mouseover(function(){ $("#menu").css("background-color","#DFC5BD")});
+   $("#menu").mouseout(function(){ $("#menu").css("background-color","#F6D8CE")});
+
+
+   $("#menu1").mouseover(function(){ $("#menu1").css("background-color","#DFC5BD")});
+   $("#menu1").mouseout(function(){ $("#menu1").css("background-color","#F6D8CE")});
+   $("#menu2").mouseover(function(){ $("#menu2").css("background-color","#DFC5BD")});
+   $("#menu2").mouseout(function(){ $("#menu2").css("background-color","#F6D8CE")});
+   
+   $("#menu3").mouseover(function(){ $("#menu3").css("background-color","#DFC5BD")});
+   $("#menu3").mouseout(function(){ $("#menu3").css("background-color","#F6D8CE")});
+  
+   $("#menu4").mouseover(function(){ $("#menu4").css("background-color","#DFC5BD")});
+   $("#menu4").mouseout(function(){ $("#menu4").css("background-color","#F6D8CE")});
+  
+   $("#menu5").mouseover(function(){ $("#menu5").css("background-color","#DFC5BD")});
+   $("#menu5").mouseout(function(){ $("#menu5").css("background-color","#F6D8CE")});
+
+
+
+$(document).ready(function(){
+    $("#drag").draggable();
+});
+});  
+function resultOfIt(){
+sum = prompt('Result?', '');
+ if(true){setTimeout(perf, 3000)
+    if (sum == t){document.write('=' + t + ' ' + 'perfect')}
+
+
+
+
+    else{alert('try again');prompt('Last chance.', '')}
+               if(true){(unperf)
+               if (sum == t){perf}
+               else{document.write('=' + t)}};};
+function perf(){document.write('=' + t + ' ' + 'perfect')}
+
+
+function unperf(){
+document.write('=' + t)}}             
+
+function tctwofadeout(){$('#testcontainer2').fadeOut(1000)};
+
+function tcthreefadeout(){$('div#testcontainer3'). fadeOut(1000)};
+
+function tconefadeout(){$('#testcontainer1').fadeOut(1000)};
+
+function random(){
+var f = Math.round(Math.random()* m);
+var th = Math.round(Math.random()* m); 
+var s = Math.round(Math.random()* m);  
+var fi = Math.round(Math.random()* m);
+var se = Math.round(Math.random()* m);
+var te = Math.round(Math.random()* m);
+}
+
+body
+{
+background-color:#F6D8CE;
+border:3px dotted;
+border-color:#6B1429;
+font-family: 'arial';
+padding-left: 20%;
+padding-bottom: 20%;
+
+
+}
+#testcontainer1
+{
+padding:10px;
+width:390px;
+height:110px;
+border:1px solid grey;
+border-radius: 20px 20px 20px 20px;
+}
+#testcontainer2,#testcontainer3, #testcontainer4
+{
+padding:10px;
+width:390px;
+height:80px;
+text-align:center;
+border:1px solid grey;
+border-radius: 20px 20px 20px 20px;
+}
+#testcontainer4
+{
+display: none;
+}
+#static
+{
+width:390px;
+height:20px;
+margin-top:10px;
+padding:10px;
+position: absolute;
+left: 280;
+top: 150;
+}
+p
+{
+text-align:45%;
+color:#222;
+margin-top:0px;
+margin-bottom:0px;
+padding:10px;
+}
+
+
+.main
+{
+font-size: 250%;
+color:#A2183A;
+}
+#back, #res
+{
+
+
+}
+a:link { 
+text-decoration: none; color: #A2183A;
+} 
+a:visited { text-decoration: none; color: #A2183A; } 
+a:active { text-decoration: none; color: #A2183A;}
+a:hover {
+text-decoration-style: dotted; text-decoration: underline;
+color: #A2183A; 
+} 
+#puthere
+{
+padding-left: 20%;
+}
+#menu, #menu1, #menu2, #menu3, #menu4, #menu5, #menu6
+{
+width:180px;
+padding:6px;
+margin:0px;
+background-color:#F6D8CE;
+font-size:1.1em;
+position: left top; 
+}
+#list, #list1, #list2
+{
+border-bottom:3px dotted;
+width:192px;
+list-style-type:none;
+margin:0px;
+padding:0px;
+font-size:1.1em;
+}
+#list li, #list1 li, #list2 li
+{
+padding:6px;
+border-bottom-style:solid;
+border-bottom-color:white;
+border-width:1px;
+background-color:#F6D8CE;
+color:#A2183A;
+position: 100% 0%; 
+}
+#drag
+{
+position: right top; 
+padding:15px;
+width:140px; 
+height:60px;
+padding-left: 80%;
+padding-bottom: 20%;
+}
+#head
+{
+position: top;
+color:#A2183A;
+font-size: 50pt;
+    position: absolute; /* Абсолютное позиционирование */
+    top: 30px; /* Положение от нижнего края */
+    left: 45px;
+}
+#placefornumber
+{
+font-size:3.1em;
+color:gray;
+}
+.radius
+{
+ background: transparent;
+ padding: 15px;
+ margin-bottom: 10px;
+}
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>                                                              
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css.css"> 
+<script src="script.js"></script>
+<style type="text/css" src = "css.css"></style>
+                                                  
+</head>
+<body>
+
+
+<h1 id = 'head'>Random numbers</h1>
+
+
+<div id="drag">
+
+<p id="menu4">Translocate me </p>
+<p id="menu6" onclick = "location.reload(); ">Reload</p>
+<p id="menu2">Log in</p>
+<p id="menu3">Exit</p>
+<p id="menu">Settings</p>
+<ul id="list">
+<li>my settings</li>
+<li>most used settings</li>
+<li>default mode 1</li>
+<li>default mode 2</li>
+</ul>
+
+<p id="menu5">Other games</p>
+<ul id="list1">
+<li></li>
+<li>crossnumber table</li>
+<li>random operations</li>
+</ul>
+
+<p id="menu1">My progress</p>
+<ul id="list2">
+<li></li>
+<li>my settings</li>
+<li>most used settings</li>
+<li>my default mode 1</li>
+<li>my default mode 2</li>
+</ul>
+
+
+</div>
+
+<div id = 'static'>
+<input id="return" value="<< return" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick ="
+$('#testcontainer1, #testcontainer2, #testcontainer3').fadeIn(1000);
+$('p#placefornumber, p#placefornumber1').text('');
+$('p#placefornumber').fadeOut(1000);" onchange=""  type="button"/>
+
+<input id="res" value="Put your result here." onkeydown = "javascript: return ((event.keyCode>47)&&(event.keyCode<58))"
+onchange="if (this.value == sum) {$('p#placefornumber1').text('Perfect!'); 
+}else{$('p#placefornumber1').text('Try again! The result is ' + sum)}" onfocus="this.value=''" onblur="this.value= 'Put your result here.'"  type="text"/>
+
+<input id = "submit" type="button" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick="var div = document.getElementById('res');
+" value="submit"/> 
+
+
+<input id="default" value="default >>"  onclick="
+f = Math.round(Math.random()* 100);
+th = Math.round(Math.random()* 100);
+var sum == f+th, operation = '+';
+$('#testcontainer1, #testcontainer2 ').fadeOut(1000);
+$('div#testcontainer3').text(f + ' '+ '+ operation +' + ' ' + th );"
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+ type="button"/>
+ </div>
+ 
+<p id ="placefornumber"></p>
+<p id ="placefornumber1"></p>
+
+<div id="testcontainer1" style="border-radius: 20px 20px 20px 20px;" class="radius" >
+<p>Choose the difficulty level by pressing 1, 2, 3, 4, 5, 6 or 7 number button. Then bigger number, then more difficult level you get.');
+</p>
+<input id="b1" value="1" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick=" $('#testcontainer1').fadeOut(1000); 
+f = Math.round(Math.random()* 100);
+th = Math.round(Math.random()* 100); 
+s = Math.round(Math.random()* 100);  
+fi = Math.round(Math.random()* 100);
+se = Math.round(Math.random()* 100);
+te = Math.round(Math.random()* 100);" type="button"/>
+
+<input id="b2" value="2" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"
+onclick=" $('#testcontainer1').fadeOut(1000);; f = Math.round(Math.random()* 1000);
+th = Math.round(Math.random()* 1000); 
+s = Math.round(Math.random()* 1000);  
+fi = Math.round(Math.random()* 1000);
+se = Math.round(Math.random()* 1000);
+te = Math.round(Math.random()* 1000);"  type="button"/>
+  
+<input id="b3" value="3" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer1').fadeOut(1000);; f = Math.round(Math.random()* 10000); 
+th = Math.round(Math.random()* 10000); 
+s = Math.round(Math.random()* 10000);  
+fi = Math.round(Math.random()* 10000);
+se = Math.round(Math.random()* 10000);
+te = Math.round(Math.random()* 10000);"  type="button"/>
+  
+<input id="b4" value="4"
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer1').fadeOut(1000);
+f = Math.round(Math.random()* 100000);
+th = Math.round(Math.random()* 100000); 
+s = Math.round(Math.random()* 100000);  
+fi = Math.round(Math.random()* 100000);
+se = Math.round(Math.random()* 100000);
+te = Math.round(Math.random()* 100000);"  type="button"/>
+  
+<input id="b5" value="5" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer1').fadeOut(1000); f = Math.round(Math.random()* 1000000);
+th = Math.round(Math.random()* 1000000); 
+s = Math.round(Math.random()* 1000000);  
+fi = Math.round(Math.random()* 1000000);
+se = Math.round(Math.random()* 1000000);
+te = Math.round(Math.random()* 1000000)"  type="button"/>
+
+
+</div>
+<br/>
+<div id = 'testcontainer2' class="radius" style="border-radius: 20px 20px 20px 20px;"   >
+<p>Choose the kind of operation, please.</p>
+  
+<input id="b6" value="+" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer2').fadeOut(1000); operation = '+';" type="button"/>
+  
+<input id="b7" value="-" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer2').fadeOut(1000); operation = '-'" type="button"/>
+  
+<input id="b8" value="*" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick=" $('#testcontainer2').fadeOut(1000);  operation = '*'" type="button"/>
+
+
+</div>
+<br/>
+
+
+<div id = 'testcontainer3' class="radius" style="border-radius: 20px 20px 20px 20px;"  >
+<p>Choose the amount of variables, please.</p>
+  
+<input id="b9" value="2" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="function func() { 
+$('div#testcontainer3'). fadeOut(1000);
+$('p#placefornumber').text(f + ' '+ operation + ' ' + ' ' + th );
+ if (operation = '+'){sum = f+th;
+ }else if (operation = '-'){sum = f-th;
+ }else if (operation = '*'){sum = f*th;
+ }else {sum = f/th};
+}
+setTimeout(func, 1000);" type="button"/>
+  
+<input id="b10" value="3" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="$('div#testcontainer3'). fadeOut(1000);
+$('p#placefornumber').text(f + ' ' + operation + ' ' + th + ' ' + operation + ' ' + s );
+ if (operation = '+'){sum = f+th+s;
+ }else if (operation = '-'){sum = f-th-s;
+ }else if (operation = '*'){sum = f*th*s;
+ }else {sum = f/th/s};" type="button"/>
+  
+<input id="b11" value="4" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="
+$('div#testcontainer3'). fadeOut(1000);
+$('p#placefornumber').text(f + ' ' + operation + ' ' + th + ' ' + operation + ' ' + s + ' ' + operation + ' ' + fi);
+ if (operation = '+'){sum = f+th+s+fi;
+ }else if (operation = '-'){sum = f-th-s-fi;
+ }else if (operation = '-'){sum = f*th*s*fi;
+ }else {sum = f/th/s/fi};" type="button"/>
+
+<input id="b12" value="5" 
+onMouseDown="this.style.fontWeight='bold'; this.style.color='#BB1D5A'" onMouseUp="this.style.fontWeight='normal'; this.style.color='#000'"  
+onclick="
+$('div#testcontainer3'). fadeOut(1000);
+$('p#placefornumber').text(f + ' ' + operation + ' ' + th + ' ' + operation + ' ' + s + ' ' + operation + ' ' + fi + ' ' + operation + ' ' + se);
+ if (operation = '+'){sum = f+th+s+fi+se;
+ }else if (operation = '-'){sum = f-th-s-fi-se;
+ }else if (operation = '*'){sum = f*th*s*fi*se;
+ }else {sum = f/th/s/fi/se};" type="button"/>
+</div>
+
+
+
+<p><a href=https://www.google.com.ua/> About </a> | Contact me</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
 16:03 With working logical part.
 <html>
 <head>
