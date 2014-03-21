@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<style type = "text/css">
+#table
+{
+border:1px;
+}
+table 
+{
+width: 300px; /* Ширина таблицы */
+cellspacing: 0;
+border: 2px;
+font-size: 150%;
+margin-left: 150px;
+}
+th 
+{
+background: #abd; /* Цвет фона */
+color: #fffff0; /* Цвет текста */
+}
+td, th {
+padding: 10px; 
+}
+#qq, #ww, #ee, #rr, #tt, #yy, #uu, #ii, #oo, #pp, 
+#aa, #ss, #dd, #ff, #gg, #hh, #jj, #kk, #ll, #zz, 
+#xx, #cc, #vv, #bb, #nn, #mm, #mq
+{
+width: 30px;
+}
+</style>
+
+</head>
+
+<body>
+<table>
+  <tr><!--Переменных и id очень много и я не знаю как их,
+ в этом случае, назвать-->
+    <td></td><th id = "aaa">aaa</th>
+    <th id = "sss">sss</th><th id = "ddd">ddd</th>
+    <th id = "zzz">zzz</th><th id = "ggg">ggg</th>
+    <th id = "hhh">hhh</th><th id = "jjj">jjj</th>
+  </tr>
+
+  <tr>
+      <th id = "qqq">qqq</th><td><input id = "qq" onkeyup = "
+var sum1 = klz+qwe;  // Сумма = одна случайная переменная + другая случайная переменная.
+var result1 = document.getElementById('qq').value;//Результат = значение введённое в текстовое поле.
+if (result1 == sum1) {$('span#p1').text(klz + '+' + qwe + '=' + sum1);//Если сумма == результат, то напечатать пример с результатом. 
+      $('strike#p1').hide();//Поле с зачёркнутыми символами спрятать.
+      $('span#p1').css('color','black');// Текст сделать чёрным.
+}else{$('span#p1').css('color','red');//В противном случае, весь текст красный.
+      $('strike#p1').css('color','red');//И зачёркнутый тоже.
+      $('span#p1').text(klz + '+' + qwe + '=' + '');//Пример печатается без решения
+      $('strike#p1').text(result1)}// и неверный результат перечеркнут."/></td>
+<!--Для каждой ячейки данные одни и те же, но меняется нумерация
+ переменных(sum1, result1, span#p1, strike#p1)  и
+выполняются операции для разных переменных.-->
+
+
+      <td><input id = "ww" onkeyup = "
+var sum5 = lzx + qwe;
+var result5 = document.getElementById('ww').value;
+if (result5 == sum5) {
+      $('span#p5').text(lzx + '+' + qwe + '=' + sum5);
+      $('strike#p5').hide();
+      $('span#p5').css('color','black');
+}else{$('span#p5').css('color','red');
+      $('strike#p5').css('color','red');
+      $('span#p5').text(lzx + '+' + qwe + '=' + '');
+      $('strike#p5').text(result5)}"/></td>
+
+
+      <td><input id = "ee" onkeyup = "// Начиная отсюда код не работает.
+var sum6 = lzx + rty;
+var result6 = document.getElementById('ee').value;
+if (result6 == sum6) {
+      $('span#p6').text(lzx + '+' + rty + '=' + sum6);
+      $('strike#p6').hide();
+      $('span#p6').css('color','black');
+}else{$('span#p6').css('color','red');
+      $('strike#p6').css('color','red');
+      $('span#p6').text(lzx + '+' + rty + '=' + '');
+      $('strike#p6').text(result6)}"/></td>
+
+
+
+      <td><input id = "rr"  onkeyup = "
+var sum7 = uio + lzx;
+var result7 = document.getElementById('rr').value;
+if (result7 == sum7) {$('span#p7').text(lzx + '+' + uio + '=' + sum7);
+      $('strike#p7').hide();
+      $('span#p7').css('color','black');
+}else{$('span#p7').css('color','red');
+      $('strike#p7').css('color','red');
+      $('span#p7').text(lzx + '+' + uio + '=' + '');
+      $('strike#p7').text(result7)}"/></td>
+
+
+<td><input id = "tt" onkeyup = "
+var sum8 = lzx + pas;
+var result8 = document.getElementById('tt').value;
+if (result8 == sum8) {$('span#p8').text(lzx + '+' + pas + '=' + sum8);
+      $('strike#p8').hide();
+      $('span#p8').css('color','black');
+}else{$('span#p8').css('color','red');
+      $('strike#p8').css('color','red');
+      $('span#p8').text(lzx + '+' + pas + '=' + '');
+      $('strike#p8').text(result8)} "/></td>
+
+
+      <td><input id = "yy" onkeyup = "
+var sum9 = xcv + qwe;
+var result9 = document.getElementById('yy').value;
+if (result9 == sum9) {$('span#p9').text(xcv + '+' + qwe + '=' + sum9);
+      $('strike#p9').hide();
+      $('span#p9').css('color','black');
+}else{$('span#p9').css('color','red');
+      $('strike#p9').css('color','red');
+      $('span#p9').text(xcv + '+' + qwe + '=' + '');
+      $('strike#p9').text(result9)}"/></td>
+
+
+<td><input id = "uu" onkeyup = "
+var sum10 = xcv + rty;
+var result10 = document.getElementById('uu').value;
+if (result10 == sum10) {$('span#p10').text(xcv + '+' + rty + '=' + sum10);
+      $('strike#p10').hide();
+      $('span#p10').css('color','black');
+}else{$('span#p10').css('color','red');
+      $('strike#p10').css('color','red');
+      $('span#p10').text(xcv + '+' + rty + '=' + '');
+      $('strike#p10').text(result10)}"/></td>
+  </tr>
+
+  <tr>
+      <th id = "iii">iii</th><td><input id = "ii" onkeyup = "
+var sum2 = klz+rty;
+var result2 = document.getElementById('ii').value;
+if (result2 == sum2) {$('span#p2').text(klz + '+' + rty + '=' + sum2);
+      $('strike#p2').hide();
+      $('span#p2').css('color','black');
+}else{$('span#p2').css('color','red');
+      $('strike#p2').css('color','red');
+      $('span#p2').text(klz + '+' + rty + '=' + '');
+      $('strike#p2').text(result2)}"/></td>
+      <td><input id = "oo" /></td><td><input id = "pp" ;/></td>
+          <td><input id = "aa" /></td><td><input id = "ss" /></td>
+          <td><input id = "dd" /></td><td><input id = "dd" /></td>
+  </tr>
+
+  <tr>
+      <th id = "fff">fff</th><td><input id = "ff" onkeyup = "
+var sum3 = klz+uio;
+var result3 = document.getElementById('ff').value;
+if (result3 == sum3) {$('span#p3').text(klz + '+' + uio + '=' + sum3);
+      $('strike#p3').hide();
+      $('span#p3').css('color','black');
+}else{$('span#p3').css('color','red');
+      $('strike#p3').css('color','red');
+      $('span#p3').text(klz + '+' + uio + '=' + '');
+      $('strike#p3').text(result3)}"/></td>
+      <td><input id = "gg" /></td><td><input id = "hh" /></td>
+      <td><input id = "jj" /></td><td><input id = "kk" /></td>
+      <td><input id = "ll" /></td><td><input id = "zz" /></td>
+  </tr>
+
+  <tr>
+      <th id = "xxx">xxx</th><td><input id = "xx" onkeyup = "
+var sum4 = klz+pas;
+var result4 = document.getElementById('xx').value;
+if (result4 == sum4) {$('span#p4').text(klz + '+' + pas + '=' + sum4);
+      $('strike#p4').hide();
+      $('span#p4').css('color','black');
+}else{$('span#p4').css('color','red');
+      $('strike#p4').css('color','red');
+      $('span#p4').text(klz + '+' + pas + '=' + '');
+      $('strike#p4').text(result4)}"/></td>
+      <td><input id = "cc" /></td><td><input id = "vv" /></td>
+      <td><input id = "bb" /></td><td><input id = "nn" /></td>
+      <td><input id = "mm" onkeyup = "
+var sum28 = pas+cvx;
+var result28 = document.getElementById('mm').value;
+if (result28 == sum28) {
+      $('span#p28').text(pas + '+' + cvx + '=' + sum28);
+      $('strike#p28').hide();
+      $('span#p28').css('color','black');
+}else{$('span#p28').css('color','red');
+      $('strike#p28').css('color','red');
+      $('span#p28').text(pas + '+' + cvx + '=' + '');
+      $('strike#p28').text(result28)}"/></td>
+
+<td><input id = "mq" /></td>
+  </tr>
+</table>
+        <input type = "button" value = "make it random" onclick =" 
+qwe = Math.round(Math.random()* 100); //Задание значения переменной.
+rty = Math.round(Math.random()* 100); //При добавлении перед переменной var 
+uio = Math.round(Math.random()* 100); //код не работает. 
+pas = Math.round(Math.random()* 100);
+dfg = Math.round(Math.random()* 100);
+hjk = Math.round(Math.random()* 100);
+klz = Math.round(Math.random()* 100);
+lzx = Math.round(Math.random()* 100); 
+zxc = Math.round(Math.random()* 100);
+xcv = Math.round(Math.random()* 100);
+cvb = Math.round(Math.random()* 100); 
+xcm = Math.round(Math.random()* 100);
+cvx = Math.round(Math.random()* 100); 
+vbn = Math.round(Math.random()* 100);
+$('#qqq').text(qwe);// Присваивание ячейкам таблицы переменной,
+$('#iii').text(rty);// которая будет та отображаться.
+$('#fff').text(uio);
+$('#xxx').text(pas);
+$('#aaa').text(klz);
+$('#sss').text(lzx);
+$('#ddd').text(xcv);
+$('#ggg').text(cvb);
+$('#hhh').text(xcm);
+$('#jjj').text(cvx);
+$('#zzz').text(vbn);"/> 
+
+<span id = "p1"></span><strike id = "p1"></strike> <!-- <strike> - область для зачеркнутого текста-->
+<span id = "p2"></span><strike id = "p2"></strike>
+<span id = "p3"></span><strike id = "p3"></strike>
+<span id = "p4"></span><strike id = "p4"></strike>
+<span id = "p5"></span><strike id = "p5"></strike>
+<span id = "p6"></span><strike id = "p6"></strike>
+<span id = "p7"></span><strike id = "p7"></strike>
+<span id = "p8"></span><strike id = "p8"></strike>
+<span id = "p9"></span><strike id = "p9"></strike>
+<span id = "p10"></span><strike id = "p10"></strike>
+<span id = "p11"></span><strike id = "p11"></strike>
+<span id = "p12"></span><strike id = "p12"></strike>
+<span id = "p13"></span><strike id = "p13"></strike>
+<span id = "p14"></span><strike id = "p14"></strike>
+<span id = "p15"></span><strike id = "p15"></strike>
+<span id = "p16"></span><strike id = "p16"></strike>
+<span id = "p17"></span><strike id = "p17"></strike>
+<span id = "p18"></span><strike id = "p18"></strike>
+<span id = "p19"></span><strike id = "p19"></strike>
+<span id = "p20"></span><strike id = "p20"></strike>
+<span id = "p21"></span><strike id = "p21"></strike>
+<span id = "p22"></span><strike id = "p22"></strike>
+<span id = "p23"></span><strike id = "p23"></strike>
+<span id = "p24"></span><strike id = "p24"></strike>
+<span id = "p25"></span><strike id = "p25"></strike>
+<span id = "p26"></span><strike id = "p26"></strike>
+<span id = "p27"></span><strike id = "p27"></strike>
+<span id = "p28"></span><strike id = "p28"></strike>
+</body>
+</html>
