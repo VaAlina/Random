@@ -1,3 +1,223 @@
+Random 1.5//Поддерживает основные математические операции
+-----------
+<html>
+<head>
+<script type='text/javascript'>
+//Программа для тренировки счёта, позволяющая выбирать количество
+//переменных и их разрядность.
+function start() {//Функция, определяющая программу. Запускается при загрузке страницы.
+
+
+var varn, n, t, f, th, s, fi, se, te, cont;//Объявление переменных.
+n = prompt('Choose the difficulty level by pressing 1, 2, 3, 4, 5, 6 or 7 number button. Then bigger number, then more difficult level you get.', '');
+
+var m = Math.pow(10,n);//Возведение 10 в степень n
+
+f= Math.round(Math.random()* m); //Создание случайного числа (переменной)
+th = Math.round(Math.random()* m); //и последующее его преобразование
+s = Math.round(Math.random()* m);  //путём умножения на m.
+fi = Math.round(Math.random()* m);
+se = Math.round(Math.random()* m);
+te = Math.round(Math.random()* m);
+var operation = prompt('What kind of operation would you like to use?', '');
+varn = prompt('How many variables would you like to use? Enter the number of them.','');
+switch(varn){//Определение используемой формулы, количества переменных и выводимого текста.
+    case '2':
+      switch(operation){
+           case '+':
+           {var t = f+s;//Используемая формула и количество переменных.
+            var numbers = [f, s];
+            document.write(numbers.join("+"))};
+             break;
+            
+           case '-':
+           {var t = f-s;//Используемая формула и количество переменных.
+            var numbers = [f, s];
+            document.write(numbers.join("-"))};
+             break;
+
+           case '*':
+           {var t = f*s;//Используемая формула и количество переменных.
+            var numbers = [f, s];
+            document.write(numbers.join("*"))};
+             break;
+            
+           case '/':
+           {var t = f/s;//Используемая формула и количество переменных.
+            var numbers = [f, s];
+            document.write(numbers.join("/"))};
+             break;
+
+                default:
+                {var t = f+s;
+                 var numbers = [f, s];
+                 document.write(numbers.join("+"))};     
+    };
+    break;
+
+    case '3':
+      switch(operation){
+           case '+':
+           {var t = f+s+th;//Используемая формула и количество переменных.
+            var numbers = [f, s, th];
+            document.write(numbers.join("+"))};
+             break;
+            
+           case '-':
+           {var t = f-s-th;//Используемая формула и количество переменных.
+            var numbers = [f, s, th];
+            document.write(numbers.join("-"))};
+             break;
+
+           case '*':
+           {var t = f*s*th;//Используемая формула и количество переменных.
+            var numbers = [f, s, th];
+            document.write(numbers.join("*"))};
+             break;
+            
+           case '/':
+           {var t = f/s/th;//Используемая формула и количество переменных.
+            var numbers = [f, s, th];
+            document.write(numbers.join("/"))};
+             break;         
+    
+                default:
+                {var t = f+s+th;
+                 var numbers = [f, s, th];
+                 document.write(numbers.join("+"))}; 
+    };break;
+
+    case '4':
+      switch(operation){
+           case '+':
+           {var t = f+s+th+fi;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi];
+            document.write(numbers.join("+"))};
+             break;
+            
+           case '-':
+           {var t = f-s-th-fi;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi];
+            document.write(numbers.join("-"))};
+             break;
+
+           case '*':
+           {var t = f*s*th*fi;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi];
+            document.write(numbers.join("*"))};
+             break;
+            
+           case '/':
+           {var t = f/s/th/fi;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi];
+            document.write(numbers.join("/"))};
+             break;         
+    
+                default:
+                {var t = f+s+th+fi;
+                 var numbers = [f, s, th, fi];
+                 document.write(numbers.join("+"))}; 
+    };break;
+
+    case '5':
+      switch(operation){
+           case '+':
+           {var t = f+s+th+fi+se;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi, se];
+            document.write(numbers.join("+"))};
+             break;
+            
+           case '-':
+           {var t = f-s-th-fi-se;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi, se];
+            document.write(numbers.join("-"))};
+             break;
+
+           case '*':
+           {var t = f*s*th*fi*se;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi, se];
+            document.write(numbers.join("*"))};
+             break;
+            
+           case '/':
+           {var t = f/s/th/fi/se;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi, se];
+            document.write(numbers.join("/"))};
+             break;         
+    
+                default:
+                {var t = f+s+th+fi+se;
+                 var numbers = [f, s, th, fi, se];
+                 document.write(numbers.join("+"))};
+    };break; 
+
+    case '6':
+
+      switch(operation){
+           case '+':
+           {var t = f+s+th+fi+se+te;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi, se, te];
+            document.write(numbers.join("+"))};
+             break;
+            
+           case '-':
+           {var t = f-s-th-fi-se-te;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi, se, te];
+            document.write(numbers.join("-"))};
+             break;
+
+           case '*':
+           {var t = f*s*th*fi*se*te;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi, se, te];
+            document.write(numbers.join("*"))};
+             break;
+            
+           case '/':
+           {var t = f/s/th/fi/se/te;//Используемая формула и количество переменных.
+            var numbers = [f, s, th, fi, se, te];
+            document.write(numbers.join("/"))};
+             break;         
+    
+                default:
+                {var t = f+s+th+fi+se+te;
+                 var numbers = [f, s, th, fi, se, te];
+                 document.write(numbers.join("+"))};
+    };break; 
+
+    default:
+    {var t = f+s;
+     var numbers = [f, s];
+     document.write(numbers.join("+"));
+     break;
+    }; 
+}
+
+var sum=prompt('Result?', '');//Запрос суммы.
+ if(true){setTimeout(perf, 3000)//Правильное решение, функция perf.
+    if (sum==t){document.write('='+t+' '+'perfect')}//Правильное решение, функция perf. 
+//Выполняет те же функции, что и предыдущая строка, но по 
+//отдельности они не работают.
+    else{alert('try again');prompt('Last chance.', '')}//Дополнительный запрос решения, в случае неправильного ответа, его отсутствия или невалидности.
+               if(true){(unperf)//Запуск функции правильного ответа.
+               if (sum==t){perf}//Запуск функции неправильного ответа.
+               else{document.write('='+t)}};};
+function perf(){document.write('='+t+' '+'perfect')}//Печать решения + perfect (похвала).
+
+function unperf(){
+document.write('='+t)}//Печать решения.
+ }
+
+
+</script>
+</head>
+<body onload='start()'>
+</body>
+</html>
+
+
+
+
+
 Random 1.4
 ---------
 <html>
